@@ -64,3 +64,10 @@ Para más información, leer la documentación recomendada de [Git Ignore](https
 
 No hace falta que estén los archivos ocultos que genera el Visual Studio Code, ni los ejecutables. Tambien podría ignorarse otros patrones de archivos que podrían ser usados a futuro. Para agregarlos, usamos la página [gitignore.io](https://www.toptal.com/developers/gitignore/api/executable,git,visualstudiocode) con las etiquetas "git", "VisualStudioCode" y "Executable".
 
+g.
+
+        2)Direccion de memoria que almacena el puntero: 000000e562fff9bc
+        3)Direccion de memoria de la variable: 000000e562fff9bc
+        4)Direccion de memoria del puntero: 000000e562fff9b0
+
+La direccion de memoria que almacena el puntero es la misma que la de la variable ya que cuando cuando creamos el puntero, le asignamos la direccion de memoria de la variable, almacenando así su dirección exacta en el sistema y pudiendo acceder a ella usando el puntero. En otras palabras, el contenido del puntero es la direccion de memoria de la variable. Como en el 4) obtnemos la direccion de memoria del puntero, tiene sentido que no sea igual a las demás direcciones ya que es la direccion de memoria del puntero en sí en el sistema es diferente a la direccion de memoria de la variable, se almacenan en lugares distintos a pesar de que el puntero apunta a la direccion de memoria de la variable.
