@@ -29,7 +29,10 @@ ignorado.txt
 - Guardamos
 ```
 ❗**IMPORTANTE: si el archivo que deseamos ignorar ya está bajo seguimiento de Git, es decir ya ha sido confimado en el repositorio pero queremos dejar de incluirlo en futuros commits, debemos eliminarlo del área de seguimiento(staging area) sin eliminarlo de nuestro sistema de archivos local.**
-**Para ello usamos el comando `git rm --cached nombre_del_archivo.txt` . ¡No olvides hacer el commit para confirmar estos nuevos cambios en tu repo!**
+**Para ello usamos el comando `git rm --cached nombre_del_archivo.txt`**
+**Si el push ya fue hecho y quieres quitar una carpeta pero sin perderla del repositorio local, debes agregar al  .gitignore esa carpeta y sus subdirectorios y luego usar el comendo `git rm -r --cached nombre_de_la_carpeta`.**
+**¡No olvides hacer el commit para confirmar estos nuevos cambios en tu repo!**
+
 
 3. Si deseas ignorar archivos con una determinada extension puedes usar el patrón de coincidencia `*.extension`, o bien según un directorio completo con su contenido inclusive haciendo uso de su nombre con `/nombre_del_directorio`
 
@@ -53,4 +56,11 @@ Para más información, leer la documentación recomendada de [Git Ignore](https
 
 # RESPUESTAS DEL TP1:
 
-...continuara
+3. c. Los archivos que se ven en el repositorio remoto son:
+        ☺ .vscode
+        ☺ README.md
+        ☺ tp1_1.cpp
+        ☺ tp1_1.exe
+
+No hace falta que estén los archivos ocultos que genera el Visual Studio Code, ni los ejecutables. Tambien podría ignorarse otros patrones de archivos que podrían ser usados a futuro. Para agregarlos, usamos la página [gitignore.io](https://www.toptal.com/developers/gitignore/api/executable,git,visualstudiocode) con las etiquetas "git", "VisualStudioCode" y "Executable".
+
